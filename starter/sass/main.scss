@@ -7,34 +7,21 @@ Dark-green: #28b485;
 
 */
 
-$color-primary: #55c57a;
-$color-primary-light: #7ed56f;
-$color-primary-dark: #28b485;
-$color-grey-dark: #777;
-$color-white: #fff;
-$color-black: #000;
+@import "abstract/functions";
+@import "abstract/mixins";
+@import "abstract/variables";
 
-*,
-*::after,
-*::before {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
 
-html {
-  font-size: 62.5%;
-}
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
 
-body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.7;
-  color: #777;
-  padding: 3rem;
-  box-sizing: border-box;
-}
+@import "pages/home";
+
+@import "components/button";
+
+
 
 .header {
 height: 95vh;
@@ -148,39 +135,7 @@ height: 35px;
 
 /* animation - oneof the two ways to do animations is by using transform */
 
-@keyframes moveInBottom {
-0% {
-opacity: 0;
-transform: translateY(30px);
-}
 
-60% {
-
-}
-100% {
-opacity: 1;
-transform: translate(0);
-}
-
-}
-
-
-
-@keyframes moveInLeft {
-0% {
-opacity: 0;
-transform: translateX(-100px);
-}
-
-60% {
-
-}
-100% {
-opacity: 1;
-transform: translate(0);
-}
-
-}
 
 
 .btn:link,
